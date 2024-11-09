@@ -1,0 +1,38 @@
+@use '../../assets/scss/variables.scss' as variables;
+
+
+
+.coverBox{
+    border-radius: variables.$border-radius-default;
+    color: variables.$white;
+    background-color: variables.$dark-blue;
+    
+    & option{
+        background-color: variables.$dark-blue;
+        border-radius: variables.$border-radius-default;
+
+        &:hover{
+            filter: brightness(1.3);
+        }
+    }
+
+    & .selected{
+        filter: brightness(1.3);
+    }
+}
+
+.light {
+    .coverBox{
+        background-color: variables.$dark-blue;
+        color: variables.$dark-gray;
+        background-color:variables.$very-light-gray;
+
+        & option{
+            background-color: variables.$very-light-gray;
+
+            &:hover{
+                background-color: variables.$very-light-gray;
+            }
+        }
+    }
+}

@@ -1,0 +1,12 @@
+@use '../../assets/scss/variables.scss' as variables;
+
+.home{
+    background-color: variables.$very-dark-blue;
+}
+
+.light {
+    .home{
+        color: variables.$very-dark-blue-text;
+        background-color:variables.$very-light-gray2;
+    }
+}

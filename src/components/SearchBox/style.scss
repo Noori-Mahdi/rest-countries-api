@@ -1,0 +1,48 @@
+@use '../../assets/scss/variables.scss' as variables;
+
+.search-box{
+    max-width: 100vw;
+    height: 40px;
+    cursor: pointer;
+    background-color: variables.$dark-blue;
+    border-radius: variables.$border-radius-default;
+
+    & .search-btn{
+        width: 10%;
+        padding-left: 10px;
+        cursor: pointer;
+    }
+
+    & .search-input{
+        width: 90%;
+        outline: none;
+        border: none;
+        border-top-right-radius: variables.$border-radius-default;
+        border-bottom-right-radius: variables.$border-radius-default;
+        padding: 0;
+        background-color: transparent;
+        color: variables.$white;
+        letter-spacing: variables.$letter-spacing-default;
+        font-size: variables.$font-size-md;
+        font-weight: variables.$fw-normal;
+
+        &::placeholder{
+            color: variables.$white;
+            font-size: variables.$font-size-xs;
+        }
+    }
+}
+
+.light {
+    .search-box{
+        color: variables.$dark-gray;
+        background-color:variables.$very-light-gray;
+
+        & .search-input{
+            &::placeholder{
+                color: variables.$dark-gray;
+                font-size: variables.$font-size-xs;
+            }
+        }  
+    }
+}

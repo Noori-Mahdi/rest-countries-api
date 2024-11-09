@@ -1,0 +1,15 @@
+@use '../../assets/scss/variables.scss' as variables;
+
+.button{
+    color: variables.$white;
+    background-color: variables.$dark-blue;
+    border-radius: variables.$border-radius-default;
+    box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.281);
+}
+
+.light{
+    .button{
+        color: variables.$very-dark-blue-text;
+        background-color: variables.$white;
+    }
+}

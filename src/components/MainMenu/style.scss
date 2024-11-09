@@ -1,0 +1,24 @@
+@use '../../assets/scss/variables.scss' as variables;
+
+
+.main-menu{
+    background-color: variables.$dark-blue;
+    color: variables.$white;
+
+
+    & .theme-btn{
+        font-size: variables.$font-size-md;
+        font-weight: variables.$fw-bold;
+
+        & .theme-Icon{
+            color: variables.$white;
+        }
+    }
+}
+
+.light {
+    .main-menu{
+        color: variables.$very-dark-blue-text;
+        background-color:variables.$very-light-gray;
+    }
+}

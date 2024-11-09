@@ -1,0 +1,14 @@
+/* src/App.css */
+@font-face {
+  font-family: 'YourFont';
+  src: url('./assets/fonts/NunitoSans-Italic-VariableFont_YTLC\,opsz\,wdth\,wght.ttf') format('NunitoSans-Italic');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'YourFont';
+  src: url('./assets/fonts/NunitoSans-VariableFont.ttf') format('NunitoSans');
+  font-weight: normal;
+  font-style: normal;
+}

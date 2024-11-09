@@ -1,0 +1,55 @@
+@use '../../assets/scss/variables.scss' as variables;
+
+.country-card{
+    background-color: variables.$dark-blue;
+    border-radius: variables.$border-radius-default;
+    color: variables.$white;
+    border-bottom: 4px solid transparent;
+    height: 270px;
+
+    &:hover{
+        border-bottom: 4px solid variables.$green;
+        border-radius: 4px;
+    }
+
+    & .imgBx{
+        & img{
+            border-top-right-radius: variables.$border-radius-default;
+            border-top-left-radius: variables.$border-radius-default;
+        }
+    }
+
+    & .infoBx{
+        letter-spacing: variables.$letter-spacing-default;
+        & h3{
+            font-size: variables.$font-size-lg;
+            font-weight: variables.$fw-bolder;
+        }
+        & div{
+            font-size: variables.$font-size-md;
+            font-weight: variables.$fw-bold;
+
+            & div:last-child{
+                margin-left: 5px;
+                letter-spacing: variables.$letter-spacing-default;
+                font-weight: variables.$fw-normal;
+                color: variables.$white;
+            }
+        }
+    }
+}
+
+
+.light {
+    .country-card{
+        color: variables.$very-dark-blue-text;
+        background-color:variables.$very-light-gray;
+
+        & div{
+            color: variables.$very-dark-blue-text;
+            & div:last-child{
+                color: variables.$dark-gray;
+            }
+        }
+    }
+}

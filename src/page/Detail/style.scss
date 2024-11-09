@@ -1,0 +1,42 @@
+@use '../../assets/scss/variables.scss' as variables;
+
+.detail{
+    min-height: 100vh;
+    background-color: variables.$very-dark-blue;
+    color: variables.$white;
+    .infoBx{
+        min-width: 450px;
+        max-height: 350px;
+        h2{
+            font-size: variables.$font-size-xl;
+            font-weight: variables.$fw-bold;
+        }
+
+        .title{
+            font-size: variables.$font-size-lg;
+            font-weight: variables.$fw-bold;
+            letter-spacing: variables.$letter-spacing-default;
+        }
+
+        .info{
+            font-size: variables.$font-size-lg;
+            font-weight: variables.$fw-normal;
+            letter-spacing: variables.$letter-spacing-default;
+        }
+    }
+    .imgBx{
+        min-width: 450px;
+        max-height: 350px;
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+
+.light {
+    .detail{
+        color: variables.$very-dark-blue-text;
+        background-color:variables.$very-light-gray2;
+    }
+}
